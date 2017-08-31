@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_main"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.fariha.editprofile.MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="263sp"
+            android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@color/purple"
+            android:id="@+id/about_tv"
+            android:text="About You"
+            />
+
+
+
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Add a bio here"
+            android:paddingLeft="20dp"
+            android:id="@+id/about"
+            android:textColor="#C3C3C3"
+            android:textSize="14sp"
+            android:maxLength="500"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:background="@color/purple"
+            android:id="@+id/title_tv"
+            android:text="Profile Title"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:textSize="14sp"
+            android:paddingLeft="20dp"
+            android:textColor="#C3C3C3"
+            android:hint="Profile Title Here"
+            android:id="@+id/profile"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/purple"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/accounts_tv"
+            android:text="Connect Accounts"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.facebook.login.widget.LoginButton
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:textSize="20sp"
+            android:padding="20sp"
+            android:layout_marginBottom="20sp"
+            android:id="@+id/facebookButton">
+        </com.facebook.login.widget.LoginButton>
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="20sp"
+                android:id="@+id/connectedFb"/>
+
+            <ImageButton
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="20sp"
+                android:src="@drawable/cross"
+                android:id="@+id/removeFb"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:background="@color/purple"
+            android:id="@+id/gender_tv"
+            android:text="Gender"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:paddingLeft="10dp"
+                android:buttonTint="@color/purple"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                android:id="@+id/male"
+                android:onClick="genderButtonClicked"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:paddingLeft="10dp"
+                android:id="@+id/female"
+                android:buttonTint="@color/purple"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                android:onClick="genderButtonClicked"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I don't wish to specify"
+                android:id="@+id/none"
+                android:paddingLeft="10dp"
+                android:buttonTint="@color/purple"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                android:onClick="genderButtonClicked"
+                />
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of birth:"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:padding="20sp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:padding="20sp"
+                android:text="03/09/1996"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:id="@+id/dateChangeButton"
+                android:onClick="setDate"
+                android:text="Change"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10sp"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:background="@color/purple"
+            android:id="@+id/details_tv"
+            android:textColor="@color/white"
+            android:text="Additional Details"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:layout_width="250sp"
+                android:textSize="16sp"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch1"
+                android:theme="@style/SwitchTheme"
+                android:textColor="@color/purple"
+                android:text="My Field Of Work"/>
+
+            <ImageButton
+
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="46dp"
+                android:background="@drawable/thumbsup"
+                android:id="@+id/Thumb1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:layout_width="250sp"
+                android:textSize="16sp"
+                android:theme="@style/SwitchTheme"
+                android:textColor="@color/purple"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/switch2"
+                android:layout_height="wrap_content"
+                android:text="My Industry"/>
+            <ImageButton
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="46dp"
+                android:background="@drawable/thumbsup"
+                android:id="@+id/Thumb2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:layout_width="250sp"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:theme="@style/SwitchTheme"
+                android:textColor="@color/purple"
+                android:id="@+id/switch3"
+                android:layout_height="wrap_content"
+                android:text="I would like to volunteer for"/>
+            <ImageButton
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="46dp"
+                android:background="@drawable/thumbsup"
+                android:visibility="gone"
+                android:id="@+id/Thumb3"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:layout_width="250sp"
+                android:textSize="16sp"
+                android:theme="@style/SwitchTheme"
+                android:textColor="@color/purple"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/switch4"
+                android:layout_height="wrap_content"
+                android:text="I would like to sponsor for"/>
+            <ImageButton
+
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:background="@drawable/thumbsup"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="46dp"
+                android:visibility="gone"
+                android:id="@+id/Thumb4"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:layout_width="250sp"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:theme="@style/SwitchTheme"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/purple"
+                android:id="@+id/switch5"
+                android:layout_height="wrap_content"
+                android:text="I would like to invest in"/>
+                <!--android:buttonTint="@color/black"
+                android:shadowColor="@color/black"-->
+
+
+
+            <ImageButton
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:background="@drawable/thumbsup"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="46dp"
+                android:visibility="gone"
+                android:id="@+id/Thumb5"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myImage"
+            android:layout_width="181dp"
+            android:layout_height="156dp"
+            android:layout_gravity="center"
+            android:src="@drawable/myimage"
+            android:layout_marginBottom="28dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/purple"
+            android:layout_below="@+id/editProfile"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:id="@+id/addButton"
+                android:background="@drawable/iconpencil"
+                android:layout_gravity="center"
+            android:layout_alignBottom="@+id/myImage"
+            android:layout_alignRight="@+id/myImage"
+            android:layout_alignEnd="@+id/myImage"
+            android:layout_marginTop="114dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+        android:text="Edit Profile"
+            android:textColor="@color/purple"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="97dp"
+            android:layout_marginRight="97dp"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:layout_marginTop="9dp"
+            android:layout_width="181dp"
+            android:layout_height="39dp"
+            android:id="@+id/editProfile"
+            />
+    </RelativeLayout>
+
+</ScrollView>

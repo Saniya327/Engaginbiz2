@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "892184452983",
+    "firebase_url": "https://editprofile-90f56.firebaseio.com",
+    "project_id": "editprofile-90f56",
+    "storage_bucket": "editprofile-90f56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892184452983:android:31a60067400c99b0",
+        "android_client_info": {
+          "package_name": "com.example.fariha.editprofile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892184452983-2dnpnv6i9549fnb234hr4lph1c94g0j9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fariha.editprofile",
+            "certificate_hash": "2a94c1561b886f32e33a6380661e36485179d678"
+          }
+        },
+        {
+          "client_id": "892184452983-0koc26jtkbsoo8a1qfh463ol00puudni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPdukR4FfQqJu3Zk10PtGN_YFXeQSFyYk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892184452983-0koc26jtkbsoo8a1qfh463ol00puudni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EditProfile</string>
+    <string name="facebook_app_id">1977553342530969</string>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="purple">#673AB7</color>
+</resources>
